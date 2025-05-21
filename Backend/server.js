@@ -11,9 +11,9 @@ app.use(bodyParser.json())
 
 const todoRoutes = require('./routes/todoRoutes')
 
-// app.get('/', (req, res) => {
-//     res.send("hi")
-// })
+app.get('/', (req, res) => {
+    res.send("hi")
+})
 
 app.use('/api', todoRoutes)
 
